@@ -9,11 +9,21 @@ BRIGHT_GREEN='\033[1;32m'
 NC='\033[0m'
 
 # Get terminal dimensions
-COLUMNS=$(tput cols)
-LINES=$(tput lines)
+COLUMNS=$(tput cols 2>/dev/null)
+LINES=$(tput lines 2>/dev/null)
+
+# Fallback in case tput fails (e.g., non-interactive shell)
+COLUMNS=${COLUMNS:-80}
+LINES=${LINES:-24}
+
+# --- DIAGNOSTIC START ---
+echo "DEBUG: Bash Version: $BASH_VERSION" >&2
+echo "DEBUG: COLUMNS value: '$COLUMNS'" >&2
+echo "DEBUG: LINES value: '$LINES'" >&2
+# --- DIAGNOSTIC END ---
 
 # Array to keep track of columns position
-declare -a rain_pos
+declare -a rain_pos=()
 
 # Initialize positions
 for ((i=0; i<COLUMNS; i++)); do
