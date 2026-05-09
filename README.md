@@ -43,17 +43,16 @@ Mini shablon
 
 #!/bin/bash
 
-# 1. O'zgaruvchilarni e'lon qiling
+# 1. O'zgaruvchilar
 SITE="google.com"
 LOG="my_log.txt"
 
-# 2. Asosiy ishni bajaring
+# 2. Asosiy ish
 echo "Tekshirilmoqda: $SITE"
 
-# 3. Mantiqni tekshiring
+# 3. Mantiqiy tekshiruv
 if ping -c 1 $SITE > /dev/null; then
-    echo "$SITE ishlayapti" >> $LOG
+    echo "$(date): $SITE ishlayapti" >> $LOG
 else
-    echo "$SITE o'chgan!" >> $LOG
+    echo "$(date): $SITE o'chgan!" >> $LOG
 fi
-
