@@ -1,10 +1,10 @@
-# 🖥️ Bash Master
+#  Bash Master
 
-> Bash skriptlarni AI yordamida o'rganish uchun interaktiv cheatsheet va amaliy qo'llanma.
+> Bash skriptlarni o'rganish uchun interaktiv cheatsheet va amaliy qo'llanma.
 
 ---
 
-## 📋 Mundarija
+##  Mundarija
 
 - [Shebang](#1-shebang)
 - [O'zgaruvchilar](#2-ozgaruvchilar)
@@ -23,7 +23,7 @@
 #!/bin/bash
 ```
 
-> 💡 Har doim birinchi qatorda bo'lishi shart. Bu bo'lmasа, skript noto'g'ri interpreter bilan ishga tushishi mumkin.
+>  Har doim birinchi qatorda bo'lishi shart. Bu bo'lmasа, skript noto'g'ri interpreter bilan ishga tushishi mumkin.
 
 ---
 
@@ -32,8 +32,8 @@
 ### E'lon qilish
 
 ```bash
-NAME="FREE"    # to'g'ri ✅
-NAME = "FREE"  # xato ❌ — = atrofida bo'sh joy bo'lmasin!
+NAME="FREE"    # to'g'ri 
+NAME = "FREE"  # xato  — = atrofida bo'sh joy bo'lmasin!
 ```
 
 ### Ishlatish
@@ -53,7 +53,7 @@ DATE=$(date +%Y-%m-%d)
 echo "Bugun: $DATE"
 ```
 
-> 💡 `$(...)` — qavs ichidagi buyruqni bajarib, natijasini o'zgaruvchiga yuklaydi.
+>  `$(...)` — qavs ichidagi buyruqni bajarib, natijasini o'zgaruvchiga yuklaydi.
 
 ---
 
@@ -136,7 +136,7 @@ else
 fi
 ```
 
-> 💡 `$?` — Linux-ning «siri». Muvaffaqiyat = `0`, xato = boshqa son.
+>  `$?` — Linux-ning «siri». Muvaffaqiyat = `0`, xato = boshqa son.
 
 ---
 
@@ -164,7 +164,7 @@ ping google.com > /dev/null 2>&1
 
 ---
 
-## ⭐ Mini shablon
+## Mini shablon
 
 Barcha tushunchalar birlashgan amaliy misol:
 
@@ -173,7 +173,7 @@ Barcha tushunchalar birlashgan amaliy misol:
 
 # ============================================
 # Sayt monitoring skripti
-# Ishlatish: ./monitor.sh
+# Ishlatish: ./about_site.sh
 # ============================================
 
 # 1. O'zgaruvchilar
@@ -205,23 +205,23 @@ cat "$LOG" | tail -5
 
 ---
 
-## 🚀 Ishlatish
+## Ishlatish
 
 ```bash
 # Skriptni yuklab oling
-git clone https://github.com/username/bash-master.git
-cd bash-master
+git clone https://github.com/CodeStriker7/bash_master.git
+cd bash_master
 
 # Bajarilish huquqini bering
-chmod +x monitor.sh
+chmod +x misol.sh
 
 # Ishga tushiring
-./monitor.sh
+./misol.sh
 ```
 
 ---
 
-## 📚 Qo'shimcha resurslar
+## Qo'shimcha resurslar
 
 - [Bash Manual (GNU)](https://www.gnu.org/software/bash/manual/)
 - [ShellCheck — skriptlarni tekshirish](https://www.shellcheck.net/)
@@ -229,11 +229,6 @@ chmod +x monitor.sh
 
 ---
 
-## 🤝 Hissa qo'shish
-
-Pull request-lar qabul qilinadi! Yangi misollar yoki tuzatishlar uchun issue oching.
-
----
 
 <div align="center">
   <sub>Bash o'rganish hech qachon kech emas 🐚</sub>
