@@ -1,3 +1,4 @@
 sites.txt
 log_history.txt
 *.log
+wifi_audit.sh
